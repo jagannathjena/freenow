@@ -72,8 +72,8 @@ public class TestLoginFunctionality {
 
     @Test
     public void verify_empty_username_empty_password_then_login()  {
-        util.verify_login(DataUtil.EMPTY_USER_NAME, DataUtil.EMPTY_PASSWORD);
-        closeSoftKeyboard();
+//        util.verify_login(DataUtil.EMPTY_USER_NAME, DataUtil.EMPTY_PASSWORD);
+//        closeSoftKeyboard();
         try {
             util.verify_login_button_click_with_invalid_login_creds();
         } catch (Exception e) {
