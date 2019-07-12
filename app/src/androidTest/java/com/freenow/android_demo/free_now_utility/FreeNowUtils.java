@@ -49,7 +49,7 @@ public class FreeNowUtils {
 //        loginButton.check(matches(not(isEnabled())));
 //        loginButton.check(matches(not(isClickable())));
         loginButton.perform(ViewActions.click());
-        Thread.sleep(1000);
+//        Thread.sleep(1000);
         WaitTillObjectVisible.waitForElementIsDisplayed(onView(withText("Login failed")), 0);
     }
 
