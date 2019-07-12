@@ -31,11 +31,13 @@ public class TestLoginFunctionality {
             GrantPermissionRule.grant(Manifest.permission.ACCESS_FINE_LOCATION);
 
     @Test
+    /* verify the left alignment of the username, password & login-button fields */
     public void test_left_alignment_of_username_password_login_fields(){
         util.verify_left_alignment_of_username_password();
     }
 
     @Test
+    /* verify login with valid username, invalid password  */
     public void verify_valid_username_invalid_password_then_login(){
         util.verify_login(DataUtil.VALID_USER_NAME,DataUtil.INVALID_PASSWORD);
         closeSoftKeyboard();
@@ -48,6 +50,7 @@ public class TestLoginFunctionality {
     }
 
     @Test
+    /* verify login with invalid username, valid password  */
     public void verify_invalid_username_valid_password_then_login(){
         util.verify_login(DataUtil.INVALID_USER_NAME,DataUtil.VALID_PASSWORD);
         closeSoftKeyboard();
@@ -60,6 +63,7 @@ public class TestLoginFunctionality {
 
 
     @Test
+    /* verify login with invalid username, invalid password  */
     public void verify_invalid_username_invalid_password_then_login(){
         util.verify_login(DataUtil.INVALID_USER_NAME,DataUtil.INVALID_PASSWORD);
         closeSoftKeyboard();
@@ -71,6 +75,7 @@ public class TestLoginFunctionality {
     }
 
     @Test
+    /* verify login with empty username, empty password  */
     public void verify_empty_username_empty_password_then_login()  {
 //        util.verify_login(DataUtil.EMPTY_USER_NAME, DataUtil.EMPTY_PASSWORD);
 //        closeSoftKeyboard();
@@ -82,6 +87,7 @@ public class TestLoginFunctionality {
     }
 
     @Test
+    /* verify login with valid username, valid password  */
     public void verify_valid_username_valid_password_then_login() throws InterruptedException {
         util.verify_login(DataUtil.VALID_USER_NAME, DataUtil.VALID_PASSWORD);
         closeSoftKeyboard();
