@@ -77,14 +77,6 @@ public class FreeNowUtils {
         verify_search_box_existance();
     }
     public void verify_logout(){
-//        ViewInteraction appCompatImageButton = onView(
-//                allOf(withContentDescription("Open navigation drawer"),
-//                                allOf(ViewMatchers.withId(com.mytaxi.android_demo.R.id.toolbar),
-//                                                withClassName(is("android.support.design.widget.AppBarLayout")),
-//                                                0)),
-//                                1),
-//                        isDisplayed()));
-//        appCompatImageButton.perform(click());
 
         ViewInteraction menuBtn = onView(
                 allOf(withContentDescription("Open navigation drawer")));
